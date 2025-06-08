@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^containers/.*/Dockerfile$"],
+      "matchStrings": [
+        "ARG VERSION=(?<currentValue>\\d+\\.\\d+\\.\\d+)\\s+#\\s*renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)"
+      ],
+      "datasourceTemplate": "{{{ datasource }}}",
+      "depNameTemplate": "{{{ depName }}}",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
