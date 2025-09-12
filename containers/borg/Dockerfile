@@ -1,4 +1,4 @@
-FROM fedora:42
+FROM fedora:44
 
 ARG VERSION=1.4.1 # renovate: datasource=github-releases depName=borgbackup/borg
 
