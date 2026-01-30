@@ -12,7 +12,7 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: renovatebot/github-action@v43.0.1
+      - uses: renovatebot/github-action@v45.0.3
         with:
           configurationFile: .github/renovate.json
         env:
