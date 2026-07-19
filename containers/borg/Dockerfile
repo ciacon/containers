@@ -1,6 +1,6 @@
 FROM fedora:42
 
-ARG VERSION=1.4.1 # renovate: datasource=github-releases depName=borgbackup/borg
+ARG VERSION=1.4.5 # renovate: datasource=github-releases depName=borgbackup/borg
 
 RUN echo 'install_weak_deps=False' >> /etc/dnf/dnf.conf \
     && echo 'assumeyes=True' >> /etc/dnf/dnf.conf \
